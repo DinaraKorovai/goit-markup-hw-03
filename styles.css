@@ -171,10 +171,6 @@ address {
   margin-right: 93px;
 }
 
-.header-link.current {
-  color: var(--btn-blue-color);
-}
-
 .header-contacts {
   display: flex;
   margin-left: auto;
@@ -184,7 +180,7 @@ address {
   margin-left: 50px;
 }
 
-.contacts-link.link {
+.contacts-link {
   font-weight: 500;
   font-style: normal;
   font-size: 14;
@@ -194,9 +190,9 @@ address {
   cursor: pointer;
 }
 
-.contacts-link.link:hover,
-.contacts-link.link:focus {
-  color: var(--btn-blue-color);
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #2196f3;
 }
 
 /* ------------HERO-------------- */
@@ -385,17 +381,49 @@ address {
   color: var(--accent-grey-color);
 }
 
-/*  ------------Портфолио-----------------*/
+/* --------------------Футер------------------ */
 
-.portfolio-btn-item {
-  padding: 6px 22px;
-
-  letter-spacing: 0.03em;
-  color: var(--background-black-colorcolor);
-  background-color: var(--background-btn-color);
-  font-family: inherit;
+/*-------------------- Лого в футере------------------------ */
+.studio-white {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.38;
+  color: #ffffff;
 }
 
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-map {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
+.footer-map:hover,
+.footer-map:focus {
+  color: #2196f3;
+}
+
+.footer-contacts-link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  color: var(--accent-grey-color);
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: #2196f3;
+}
+
+/*  ------------Портфолио-----------------*/
 .portfolio-buttons-list {
   display: flex;
   text-align: center;
@@ -405,6 +433,7 @@ address {
   margin-right: auto;
   margin-bottom: 34px;
 }
+
 .portfolio-btn-active {
   font-weight: 500;
   font-size: 16px;
@@ -430,47 +459,33 @@ address {
 }
 
 .portfolio-btn-item:hover,
-.portfolio-btn-item:focus {
+.portfolio-btn:focus {
   color: var(--background-white-color);
   background-color: var(--btn-blue-color);
 }
 
-.portfolio-button-item:not(:last-child) {
+.buttons-btn-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-button-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-/* -----------------------WORKS----------------------- */
-.works-list {
+.portfolio-btn-list {
   display: flex;
-  flex-wrap: wrap;
+
+  text-align: center;
+
+  width: 575px;
+
+  padding-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
 }
 
-.cards-works {
-  padding: 20px 24px;
-  border: 1px solid var(--cards-border-color);
-  border-top: none;
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
 }
 
-.works-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-
-  background: #ffffff;
-}
-
-.works-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.works-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
 .works-title {
-  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -480,79 +495,6 @@ address {
 
 .works-subtitle {
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   color: var(--accent-grey-color);
-}
-
-/* -------------------FOOTER---------------------  */
-
-/*-------------------- Лого в футере------------------------ */
-.studio-white {
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.38;
-  color: #ffffff;
-}
-
-.footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.address-link {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: #ffffff;
-}
-.address-link:hover,
-.address-link:focus {
-  color: #2196f3;
-}
-
-.footer-contacts-link {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14;
-  line-height: 1.71;
-  letter-spacing: 0.02em;
-  color: var(--accent-grey-color);
-}
-
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
-  color: #2196f3;
-}
-
-.address-list {
-  max-width: 231px;
-}
-
-.address-list .link {
-  color: var(--footer-adres-color);
-  font-size: inherit;
-  line-height: 1.71;
-}
-
-.address-list .address-link {
-  color: var(--background-white-color);
-}
-
-.address-list {
-  margin: bottom 60px;
-}
-
-.adress-list .link:hover,
-.adress-list .linkk:focus {
-  color: var(--accent-color);
-}
-
-.footer .logo-link {
-  margin-bottom: 20px;
-}
-
-.address-list-item:not(:last-child) {
-  margin-bottom: 9px;
 }
