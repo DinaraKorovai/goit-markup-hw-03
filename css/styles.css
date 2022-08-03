@@ -36,8 +36,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-
-  /* outline: var(--conteiner-outline); */
 }
 
 button {
@@ -48,17 +46,12 @@ button {
   border-radius: 4px;
 }
 
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-
 address {
   font-style: normal;
 }
 
 .list {
-  padding: 0;
+  padding-left: 0;
   margin: 0;
   list-style: none;
 }
@@ -68,13 +61,9 @@ address {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
   width: 1200px;
-
-  outline: var(--container-outline);
 }
 
 .section {
@@ -85,6 +74,7 @@ address {
 /* ------------------------HEADER LOGO--------------------------------- */
 
 .logo {
+  margin: 20px 0;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -157,11 +147,14 @@ address {
   color: #212121;
 }
 
-.contacts-item {
+.header-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-item .header-link + .header-link {
+.contacts-item {
+}
+
+.header-link + .header-link {
   margin-left: 50px;
 }
 
@@ -206,15 +199,11 @@ address {
 }
 .hero {
   background-color: #2f303a;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1600px;
+  /* width: 1600px */
 }
 
 .hero {
-  padding: 200px 200px;
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -224,7 +213,7 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-white-color);
 
   max-width: 696px;
 
@@ -244,9 +233,9 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: #ffffff;
+  color: var(--background-white-color);
   letter-spacing: 0.06em;
-  background-color: #2196f3;
+  background-color: var(--btn-blue-color);
   cursor: pointer;
 }
 
@@ -291,7 +280,7 @@ address {
   margin: 0;
   font-size: inherit;
   line-height: 1.71;
-  color: #757575;
+  color: var(--accent-grey-color);
 }
 
 .hero-values-list .hero-values-item + .hero-values-item {
@@ -329,13 +318,12 @@ address {
 
 /*---------------------- наша команда-------------- */
 
-.team,
-.team-list {
+.team {
   margin-bottom: 50px;
 }
 
 .our-team {
-  background: #f5f4fa;
+  background: var(--background-btn-color);
 }
 
 .team {
@@ -352,7 +340,7 @@ address {
 
 .team-item {
   width: 270px;
-  background: #ffffff;
+  background: var(--background-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -410,14 +398,14 @@ address {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  color: #fff;
-  background-color: #2196f3;
+  color: var(--background-white-color);
+  background-color: var(--btn-blue-color);
   letter-spacing: 0.06em;
   cursor: pointer;
 }
 .portfolio-btn-active:hover,
 .portfolio-btn-active:focus {
-  background-color: #2196f3;
+  background-color: var(--btn-blue-color);
 }
 
 .portfolio-btn-item {
@@ -459,7 +447,7 @@ address {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 
-  background: #ffffff;
+  background: var(--background-white-color);
 }
 
 .works-item:nth-child(3n) {
@@ -491,13 +479,16 @@ address {
   font-weight: 400;
   font-size: 26px;
   line-height: 1.38;
-  color: #ffffff;
+  color: var(--background-white-color);
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-hero-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-address {
 }
 
 .address-link {
@@ -505,11 +496,11 @@ address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  color: #ffffff;
+  color: var(--background-white-color);
 }
 .address-link:hover,
 .address-link:focus {
-  color: #2196f3;
+  color: var(--btn-blue-color);
 }
 
 .footer-contacts-link {
@@ -523,10 +514,11 @@ address {
 
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
-  color: #2196f3;
+  color: var(--btn-blue-color);
 }
 
 .address-list {
+  margin-top: 20px;
   max-width: 231px;
 }
 
@@ -549,7 +541,8 @@ address {
   color: var(--accent-color);
 }
 
-.footer .logo-link {
+.logo,
+.address-list {
   margin-bottom: 20px;
 }
 
