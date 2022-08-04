@@ -74,7 +74,7 @@ address {
 /* ------------------------HEADER LOGO--------------------------------- */
 
 .logo {
-  margin: 20px 0;
+  margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -139,7 +139,6 @@ address {
 
 .header-item .link {
   display: flex;
-  margin-right: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -161,7 +160,6 @@ address {
 .header-nav .link,
 .logo-link {
   display: block;
-  margin-right: 93px;
 }
 
 .header-link.current {
@@ -309,7 +307,7 @@ address {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .work-list-item {
@@ -387,17 +385,15 @@ address {
 .portfolio-buttons-list {
   display: flex;
   text-align: center;
-  width: 575px;
-  padding-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 34px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-btn-active {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  padding: 6px 22px;
   color: var(--background-white-color);
   background-color: var(--btn-blue-color);
   letter-spacing: 0.06em;
@@ -437,7 +433,7 @@ address {
   flex-wrap: wrap;
 }
 
-.cards-works {
+.card-works {
   padding: 20px 24px;
   border: 1px solid var(--cards-border-color);
   border-top: none;
@@ -519,7 +515,6 @@ address {
 
 .address-list {
   margin-top: 20px;
-  max-width: 231px;
 }
 
 .address-list .link {
@@ -543,7 +538,6 @@ address {
 
 .logo,
 .address-list {
-  margin-bottom: 20px;
 }
 
 .address-list-item:not(:last-child) {
